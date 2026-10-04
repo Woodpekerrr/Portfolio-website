@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pootawan | Portfolio</title>
 
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
@@ -43,10 +48,10 @@
                 <span>แสงมณีรัตนชัย</span>
             </h1>
 
-            <h2>Entry-level <span>Developer.</span></h2>
+            <h2>Web <span>Developer.</span></h2>
 
             <p class="hero-description">
-                เด็กจบใหม่ที่มีความสนใจด้าน Software Development และ Web Development
+                ผู้ที่มีความสนใจด้าน Software Development และ Web Development
                 พร้อมเรียนรู้เทคโนโลยีใหม่ ๆ และพัฒนาทักษะเพื่อเติบโตในสายงาน Developer
             </p>
 
@@ -55,10 +60,10 @@
                     <i class="fa-solid fa-code"></i> ดูผลงานของฉัน
                 </a>
 
-                <a href="files/dev%20resume.pdf"
+                <a href="files/CV1.pdf"
                    class="btn btn-outline"
-                   download="Pootawan-Resume.pdf">
-                    <i class="fa-solid fa-download"></i> ดาวน์โหลด Resume
+                   download="CV1.pdf">
+                    <i class="fa-solid fa-download"></i> ดาวน์โหลด CV
                 </a>
             </div>
         </div>
@@ -99,17 +104,15 @@
 
                 <p>
                     สวัสดีครับ ผมชื่อ <strong>ภูตะวัน แสงมณีรัตนชัย</strong>
-                    เป็นเด็กจบใหม่ที่สนใจงานด้าน Software Development และ Web Development
+                    เป็นนักจบใหม่ที่สนใจงานด้าน Web Development, Software Development และ Artificial Intelligence
                 </p>
 
                 <p>
-                    ผมสนุกกับการเรียนรู้การเขียนโปรแกรม การแก้ไขปัญหา
-                    และการทดลองใช้เทคโนโลยีใหม่ ๆ เพื่อพัฒนาความสามารถของตัวเอง
+                    ผมสนุกกับการเรียนรู้การเขียนโปรแกรม การแก้ไขปัญหา และการทดลองใช้เทคโนโลยีใหม่ๆ โดยมีประสบการณ์พัฒนาโปรเจกต์ทั้งเว็บไซต์ แอปพลิเคชัน และระบบ AI
                 </p>
 
                 <p>
-                    เป้าหมายของผมคือการเริ่มต้นทำงานในตำแหน่ง Developer
-                    และพัฒนาประสบการณ์จากการทำงานจริง
+                    เป้าหมายของผมคือการเริ่มต้นทำงานในสาย Developer หรือ AI/Software Development พร้อมเรียนรู้จากการทำงานจริง พัฒนาทักษะอย่างต่อเนื่อง และนำความรู้ที่มีไปสร้างผลงานที่สามารถใช้งานได้จริง
                 </p>
             </div>
 
@@ -316,67 +319,51 @@
 <!-- ================= CONTACT ================= -->
 <section class="section" id="contact">
     <div class="container">
-
-        <div class="section-title">
-            <p>CONTACT</p>
-            <h2>Get In <span>Touch.</span></h2>
-            <div class="line"></div>
-        </div>
-
         <div class="contact-grid">
 
-            <div class="contact-text">
-                <h3>ติดต่อผม</h3>
+            <!-- LEFT -->
+            <div class="contact-left">
+                <div class="section-title contact-title">
+                    <p>CONTACT</p>
+                    <h2>Get In <span>Touch.</span></h2>
+                    <div class="line"></div>
+                </div>
 
-                <p>
-                    หากสนใจร่วมงานหรือต้องการสอบถามข้อมูลเพิ่มเติม
-                    สามารถติดต่อผมผ่านช่องทางด้านล่างได้ครับ
-                </p>
+                <div class="contact-text">
+                    <h3>ติดต่อผม</h3>
+                    <p>
+                        หากสนใจร่วมงานหรือต้องการสอบถามข้อมูลเพิ่มเติม
+                        สามารถติดต่อผมผ่านช่องทางด้านข้างได้ครับ
+                    </p>
+                </div>
+            </div>
 
+            <!-- RIGHT -->
+            <div class="contact-right">
                 <div class="contact-links">
                     <a href="mailto:pootawan1996@gmail.com">
-                        <i class="fa-solid fa-envelope"></i> pootawan1996@gmail.com
+                        <span class="contact-icon-box">
+                            <i class="fa-solid fa-envelope"></i>
+                        </span>
+                        <span class="contact-link-text">pootawan1996@gmail.com</span>
                     </a>
 
-                    <a href="https://github.com/Woodpekerrr"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        <i class="fa-brands fa-github"></i> GitHub
+                    <a href="https://github.com/Woodpekerrr" target="_blank" rel="noopener noreferrer">
+                        <span class="contact-icon-box">
+                            <i class="fa-brands fa-github"></i>
+                        </span>
+                        <span class="contact-link-text">GitHub</span>
                     </a>
 
                     <a href="tel:0952497535">
-                        <i class="fa-solid fa-phone"></i> 095-249-7535
+                        <span class="contact-icon-box">
+                            <i class="fa-solid fa-phone"></i>
+                        </span>
+                        <span class="contact-link-text">095-249-7535</span>
                     </a>
                 </div>
             </div>
 
-            <!-- MAP -->
-            <div class="map-box">
-
-                <div class="map-header">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <div>
-                        <small>LOCATION</small>
-                        <h3>Bangkok, Thailand</h3>
-                    </div>
-                </div>
-
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.7672789323315!2d100.57967427593437!3d13.79289798660333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29dcef0bf2f27%3A0xa118dd31544bf5cc!2zNTkzIDEg4LiLLiDguJ7guLTguJrguLnguKXguKLguYzguK3guLjguJvguJbguLHguKHguKDguYwg4LmB4LiC4Lin4LiH4Liq4Liy4Lih4LmA4Liq4LiZ4LiZ4Lit4LiBIOC5gOC4guC4leC4q-C5ieC4p-C4ouC4guC4p-C4suC4hyDguIHguKPguLjguIfguYDguJfguJ7guKHguKvguLLguJnguITguKMgMTAzMTA!5e0!3m2!1sth!2sth!4v1790912099302!5m2!1sth!2sth"
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                    allowfullscreen>
-                </iframe>
-
-                <a class="map-link"
-                   href="https://maps.app.goo.gl/AdBkkQXMGkM38HUD9"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    เปิดใน Google Maps
-                </a>
-
-            </div>
         </div>
     </div>
 </section>

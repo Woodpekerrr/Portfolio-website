@@ -23,7 +23,7 @@ html {
 body {
     background: var(--bg);
     color: var(--text);
-    font-family: Arial, sans-serif;
+    font-family: 'Kanit', sans-serif;
     line-height: 1.7;
 }
 
@@ -991,141 +991,119 @@ img {
 
 /* ================= CONTACT ================= */
 
+#contact {
+    padding: 90px 0;
+}
+
 .contact-grid {
     display: grid;
-    grid-template-columns: 0.8fr 1.2fr;
+    grid-template-columns: 1fr 1.05fr;
+    gap: 90px;
+    align-items: center;
+}
 
-    gap: 50px;
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-    align-items: start;
+.contact-title {
+    margin-bottom: 55px;
+}
+
+.contact-title > p {
+    color: var(--red);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.contact-title h2 {
+    margin-top: 12px;
+    font-size: clamp(52px, 5vw, 82px);
+    line-height: 1.05;
+}
+
+.contact-title h2 span {
+    color: var(--red);
+}
+
+.contact-title .line {
+    width: 95px;
+    height: 5px;
+    margin-top: 28px;
+    background: var(--red);
+    border-radius: 20px;
 }
 
 .contact-text h3 {
-    margin-bottom: 15px;
-
-    font-size: 28px;
+    margin-bottom: 22px;
+    font-size: 56px;
+    font-weight: 700;
 }
 
-.contact-text > p {
-    margin-bottom: 30px;
-
+.contact-text p {
+    max-width: 650px;
     color: var(--gray);
+    font-size: 19px;
+    line-height: 1.8;
+}
+
+/* RIGHT */
+
+.contact-right {
+    width: 100%;
 }
 
 .contact-links {
     display: flex;
     flex-direction: column;
-
-    gap: 12px;
+    gap: 22px;
 }
 
 .contact-links a {
+    min-height: 116px;
     display: flex;
     align-items: center;
-
-    gap: 12px;
-
-    padding: 15px 17px;
-
-    color: var(--gray);
-
-    background: var(--card);
-
-    border: 1px solid var(--border);
-    border-radius: 6px;
-
+    gap: 24px;
+    padding: 24px 28px;
+    color: #e8edf5;
+    background: rgba(22, 27, 34, 0.88);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
     transition: 0.25s ease;
 }
 
-.contact-links a i {
-    width: 20px;
-
-    color: var(--red);
-
-    text-align: center;
-}
-
 .contact-links a:hover {
-    color: #fff;
-
-    border-color: var(--red);
-
-    transform: translateX(5px);
+    transform: translateX(6px);
+    border-color: rgba(255, 59, 69, 0.55);
 }
 
+.contact-icon-box {
+    width: 72px;
+    height: 72px;
+    flex-shrink: 0;
 
-/* ================= MAP ================= */
-
-.map-box {
-    overflow: hidden;
-
-    background: var(--card);
-
-    border: 1px solid var(--border);
-    border-radius: 8px;
-}
-
-.map-header {
-    display: flex;
-    align-items: center;
-
-    gap: 15px;
-
-    padding: 18px 20px;
-
-    border-bottom: 1px solid var(--border);
-}
-
-.map-header > i {
-    color: var(--red);
-
-    font-size: 23px;
-}
-
-.map-header small {
-    color: var(--gray);
-
-    font-size: 9px;
-
-    letter-spacing: 2px;
-}
-
-.map-header h3 {
-    margin-top: 2px;
-
-    font-size: 16px;
-}
-
-.map-box iframe {
-    width: 100%;
-    height: 330px;
-
-    display: block;
-
-    border: 0;
-}
-
-.map-link {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    gap: 8px;
-
-    padding: 14px;
-
-    color: #fff;
-
-    border-top: 1px solid var(--border);
-
-    font-size: 13px;
-    font-weight: 600;
-
-    transition: 0.2s ease;
+    background: linear-gradient(135deg, rgba(255, 59, 69, 0.28), rgba(120, 10, 25, 0.45));
+    border-radius: 16px;
 }
 
-.map-link:hover {
+.contact-icon-box i {
     color: var(--red);
+    font-size: 34px;
+}
+
+.contact-link-text {
+    color: #f3f5f7;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
 }
 
 
@@ -1221,11 +1199,63 @@ footer {
         gap: 30px;
     }
 
+    /* CONTACT */
+    .contact-grid {
+        gap: 40px;
+    }
+
+    .contact-title {
+        margin-bottom: 35px;
+    }
+
+    .contact-title h2 {
+        font-size: clamp(38px, 7vw, 58px);
+    }
+
+    .contact-title .line {
+        width: 70px;
+        height: 4px;
+        margin-top: 20px;
+    }
+
+    .contact-text h3 {
+        margin-bottom: 16px;
+        font-size: 36px;
+    }
+
+    .contact-text p {
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+    .contact-links {
+        width: 100%;
+        gap: 16px;
+    }
+
+    .contact-links a {
+        min-height: 88px;
+        padding: 18px 20px;
+        gap: 18px;
+    }
+
+    .contact-icon-box {
+        width: 58px;
+        height: 58px;
+    }
+
+    .contact-icon-box i {
+        font-size: 26px;
+    }
+
+    .contact-link-text {
+        font-size: 20px;
+    }
+
+    /* PROFILE */
     .profile-area {
         min-height: 470px;
-
         margin-top: 20px;
-
         padding: 30px;
     }
 
@@ -1240,6 +1270,7 @@ footer {
         bottom: 15px;
     }
 
+    /* PROJECTS */
     .project-card {
         flex: 0 0 calc((100% - 20px) / 2);
     }
@@ -1247,7 +1278,6 @@ footer {
     .project-image {
         height: 210px;
     }
-
 }
 
 
@@ -1261,10 +1291,49 @@ footer {
 
     .hero {
         min-height: auto;
-
         padding-top: 120px;
     }
 
+    /* CONTACT */
+    #contact {
+        padding: 65px 0;
+    }
+
+    .contact-title h2 {
+        font-size: 46px;
+    }
+
+    .contact-text h3 {
+        font-size: 32px;
+    }
+
+    .contact-text p {
+        font-size: 15px;
+    }
+
+    .contact-links {
+        gap: 14px;
+    }
+
+    .contact-links a {
+        min-height: 82px;
+        padding: 16px 18px;
+    }
+
+    .contact-icon-box {
+        width: 54px;
+        height: 54px;
+    }
+
+    .contact-icon-box i {
+        font-size: 24px;
+    }
+
+    .contact-link-text {
+        font-size: 18px;
+    }
+
+    /* NAVBAR */
     .nav-menu {
         position: absolute;
 
@@ -1305,9 +1374,7 @@ footer {
     .menu-toggle {
         display: block;
     }
-
 }
-
 
 /* ================= RESPONSIVE 550 ================= */
 
@@ -1317,6 +1384,8 @@ footer {
         width: calc(100% - 30px);
     }
 
+    /* ================= HERO ================= */
+
     .hero-buttons {
         flex-direction: column;
     }
@@ -1325,11 +1394,11 @@ footer {
         width: 100%;
     }
 
+    /* ================= PROFILE ================= */
+
     .profile-area {
         min-height: 410px;
-
         margin-top: 25px;
-
         padding: 20px;
     }
 
@@ -1346,7 +1415,6 @@ footer {
     .profile-badge {
         left: 0;
         bottom: 5px;
-
         padding: 10px 14px;
     }
 
@@ -1355,15 +1423,18 @@ footer {
         height: 70px;
     }
 
+    /* ================= SKILLS ================= */
+
     .skill-card {
         width: 165px;
-
         padding: 22px 15px;
     }
 
     .skill-card i {
         font-size: 34px;
     }
+
+    /* ================= PROJECTS ================= */
 
     .project-card {
         flex: 0 0 100%;
@@ -1381,10 +1452,74 @@ footer {
         right: -10px;
     }
 
-    .footer-content {
-        flex-direction: column;
+    /* ================= CONTACT ================= */
 
-        text-align: center;
+    #contact {
+        padding: 55px 0;
     }
 
+    .contact-grid {
+        gap: 30px;
+    }
+
+    .contact-title {
+        margin-bottom: 30px;
+    }
+
+    .contact-title > p {
+        font-size: 10px;
+        letter-spacing: 4px;
+    }
+
+    .contact-title h2 {
+        font-size: 40px;
+    }
+
+    .contact-title .line {
+        width: 55px;
+        height: 3px;
+        margin-top: 18px;
+    }
+
+    .contact-text h3 {
+        margin-bottom: 14px;
+        font-size: 28px;
+    }
+
+    .contact-text p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .contact-links {
+        gap: 12px;
+    }
+
+    .contact-links a {
+        min-height: 72px;
+        gap: 14px;
+        padding: 14px 16px;
+        border-radius: 10px;
+    }
+
+    .contact-icon-box {
+        width: 48px;
+        height: 48px;
+        border-radius: 10px;
+    }
+
+    .contact-icon-box i {
+        font-size: 21px;
+    }
+
+    .contact-link-text {
+        font-size: 15px;
+    }
+
+    /* ================= FOOTER ================= */
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
 }
